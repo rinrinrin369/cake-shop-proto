@@ -21,30 +21,30 @@ export default function Footer() {
             <div className="grid grid-cols-2 gap-8">
               <div className="space-y-4">
                 <Link href="/" className="block small-text hover:golden-accent transition-colors">
-                  ホーム
+                  HOME
                 </Link>
                 <Link href="/products" className="block small-text hover:golden-accent transition-colors">
-                  商品
+                  CAKES
                 </Link>
                 <Link href="/chef" className="block small-text hover:golden-accent transition-colors">
-                  パティシエ
+                  ABOUT
                 </Link>
-                <Link href="/seasonal" className="block small-text hover:golden-accent transition-colors">
+                {/* <Link href="/seasonal" className="block small-text hover:golden-accent transition-colors">
                   季節のお菓子
-                </Link>
+                </Link> */}
               </div>
               <div className="space-y-4">
-                <Link href="/philosophy" className="block small-text hover:golden-accent transition-colors">
+                {/* <Link href="/philosophy" className="block small-text hover:golden-accent transition-colors">
                   理念
-                </Link>
+                </Link> */}
                 <Link href="/news" className="block small-text hover:golden-accent transition-colors">
-                  お知らせ
+                  NEWS
                 </Link>
                 <Link href="/access" className="block small-text hover:golden-accent transition-colors">
-                  店舗案内
+                  ACCESS
                 </Link>
                 <Link href="/contact" className="block small-text hover:golden-accent transition-colors">
-                  お問い合わせ
+                  CONTACT
                 </Link>
               </div>
             </div>

@@ -24,25 +24,25 @@ const philosophySections = [
     title: "素材へのこだわり",
     content:
       "世界各地から厳選した最高級の素材のみを使用しています。フランス産バター、ベルギー産チョコレート、国産の新鮮な果物など、一つ一つの素材が持つ本来の味わいを最大限に引き出すことを心がけています。",
-    image: "https://picsum.photos/600/400/",
+    image: "/images/cakes/hero-slide-1.jpg",
   },
   {
     title: "パティシエの信念",
     content:
       "伝統的なフランス菓子の技法を基盤としながら、日本人の繊細な味覚に合わせた独自のアプローチを追求しています。一つ一つのケーキに込める情熱と技術で、お客様の心に残る特別な体験をお届けします。",
-    image: "https://picsum.photos/600/400/",
+      image: "/images/cakes/hero-slide-1.jpg",
   },
   {
     title: "お客様への想い",
     content:
       "私たちのケーキは、お客様の大切な瞬間を彩る存在でありたいと願っています。誕生日、記念日、そして日常の小さな幸せまで、すべての場面で最高の美味しさと感動をお届けすることが私たちの使命です。",
-    image: "https://picsum.photos/600/400/",
+      image: "/images/cakes/hero-slide-1.jpg",
   },
   {
     title: "地域とのつながり",
     content:
       "地元の生産者との深いつながりを大切にし、季節ごとの新鮮な食材を積極的に取り入れています。地域に根ざしたパティスリーとして、コミュニティの皆様と共に歩み続けることを大切にしています。",
-    image: "https://picsum.photos/600/400/",
+    image: "/images/cakes/hero-slide-1.jpg",
   },
 ]
 
@@ -119,9 +119,10 @@ export default function ChefPage() {
               className={`flex flex-col ${index % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"} gap-12 items-center`}
             >
               <div className="md:w-1/2">
-                <div className="relative h-80 rounded-xl overflow-hidden">
+                <div className="relative h-80 overflow-hidden">
                   <Image
-                    src={section.image || "/placeholder.svg"}
+                    // src={section.image || "/placeholder.svg"}
+                    src={section.image}
                     alt={section.title}
                     fill
                     className="object-cover"
