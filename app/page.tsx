@@ -1,103 +1,121 @@
-import Image from "next/image";
+import HeroSection from "@/components/hero-section"
+import HeroSlider from "@/components/hero-slider"
+import ScrollAnimation from "@/components/scroll-animation"
+import SectionLinks from "@/components/section-links"
+import CinematicStory from "@/components/cinematic-story"
+import SeasonalShowcase from "@/components/seasonal-showcase"
+import SeasonalFlow from "@/components/seasonal-flow"
+import NewsTimeline from "@/components/news-timeline"
+import ParallaxSection from "@/components/parallax-section"
+import InstagramGallery from "@/components/instagram-gallery"
+import StoreGallery from "@/components/store-gallery"
+import ProductSection from "@/components/product-section"
 
-export default function Home() {
+export default function HomePage() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+    <div className="min-h-screen  text-white">
+      {/* ヒーローセクション */}
+      <HeroSection />
+      
+      {/* ヒーロースライダー */}
+      {/* <HeroSlider /> */}
+      
+      {/* スクロールアニメーション */}
+      <br/>
+      <br/>
+      <br/>
+      <ScrollAnimation>
+        <div className="container-elegant text-center">
+          <h2 className="section-heading">Patisserie de Lumière</h2>
+          <div className="h-px bg-[#D4AF37] mx-auto">菓子は記憶。わたしたちは、記憶を創る。Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, animi placeat adipisci et exercitationem minus numquam, maiores quis, natus suscipit quod earum reiciendis mollitia. Sit, earum? Temporibus vero itaque vel!</div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+      </ScrollAnimation>
+      
+      {/* セクションリンク */}
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      {/* <SectionLinks /> */}
+      <ProductSection/>
+      
+      {/* シネマティックストーリー */}
+      {/* <CinematicStory /> */}
+      
+      {/* 季節のショーケース */}
+      {/* <SeasonalShowcase /> */}
+      
+      {/* 季節のフロー */}
+      {/* <SeasonalFlow /> */}
+      
+      {/* ニュースタイムライン */}
+      {/* <NewsTimeline /> */}
+      <br/>
+      <br/>
+      <br/>
+      <h1 className="py-509 container-elegant text-center main-title text-[#D4AF37] mb-8">ニュースタイムライン追加予定</h1>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      {/* パララックスセクション - 哲学 */}
+      {/* <ParallaxSection 
+        backgroundImage="/images/interior/hero-background.jpg"
+        className="section-spacing"
+      >
+        <div className="container-elegant">
+          <div className="text-center">
+            <h2 className="section-heading">私たちの哲学</h2>
+            <div className="w-24 h-px bg-[#D4AF37] mx-auto mb-8"></div>
+            <p className="body-text max-w-4xl mx-auto">
+              一つひとつの素材と向き合い、季節の移ろいに耳を傾け、お客様の大切な瞬間に寄り添う。
+              そんな想いを込めて、私たちは毎日、心を込めてお菓子を作り続けています。
+              フランスで学んだ伝統の技法に、日本の美意識を重ね合わせた、
+              ここだけの味わいをお楽しみください。
+            </p>
+          </div>
+        </div>
+      </ParallaxSection> */}
+      
+      {/* インスタグラムギャラリー */}
+      {/* <InstagramGallery /> */}
+      <br/>
+      <br/>
+      <br/>
+      <h1 className="py-509 container-elegant text-center main-title text-[#D4AF37] mb-8">インスタグラムギャラリー追加予定</h1>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      {/* ストアギャラリー */}
+      {/* <StoreGallery /> */}
+      
+      {/* パララックスセクション - 店舗について */}
+      {/* <ParallaxSection 
+        backgroundImage="/images/interior/hero-background.jpg"
+        className="section-spacing"
+      >
+        <div className="container-elegant">
+          <div className="elegant-grid">
+            <div className="fade-in">
+              <div className="space-y-8">
+                <h2 className="section-heading">店舗について</h2>
+                <div className="space-y-6">
+                  <p className="body-text">
+                    表参道の静かな一角に佇む当店は、パリの老舗パティスリーを思わせる上品な空間です。
+                  </p>
+                  <p className="body-text">
+                    ガラス越しに見える工房では、パティシエたちが一つ一つ丁寧にお菓子を作り上げる様子をご覧いただけます。
+                    特別な日のケーキから、日常を彩る小さなお菓子まで、心を込めてお作りいたします。
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </ParallaxSection> */}
     </div>
-  );
+  )
 }
